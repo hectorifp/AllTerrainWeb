@@ -2,10 +2,10 @@ import { Component, OnInit, OnDestroy } from '@angular/core';
 import { RouterLink, RouterLinkActive } from '@angular/router';
 
 @Component({
-    selector: 'app-header',
-    standalone: true,
-    imports: [RouterLink, RouterLinkActive],
-    template: `
+  selector: 'app-header',
+  standalone: true,
+  imports: [RouterLink, RouterLinkActive],
+  template: `
     <div class="hero-carousel">
       <div class="carousel-slide" [class.active]="currentSlide === 0" style="background-image: url('/assets/images/carousel_desert_1773570162096.png')"></div>
       <div class="carousel-slide" [class.active]="currentSlide === 1" style="background-image: url('/assets/images/carousel_forest_1773570176689.png')"></div>
@@ -19,7 +19,7 @@ import { RouterLink, RouterLinkActive } from '@angular/router';
       <div class="header-inner container">
         <a routerLink="/" class="logo">
           <span class="logo-icon">◆</span>
-          <span class="logo-text">Todoterreno</span>
+          <span class="logo-text">4x4AllTerrainer</span>
         </a>
         <button class="menu-toggle" (click)="toggleMenu()" [class.active]="menuOpen" aria-label="Menú">
           <span></span>
@@ -34,7 +34,7 @@ import { RouterLink, RouterLinkActive } from '@angular/router';
       </div>
     </header>
   `,
-    styles: [`
+  styles: [`
     .hero-carousel {
       position: relative;
       width: 100%;
@@ -248,27 +248,27 @@ import { RouterLink, RouterLinkActive } from '@angular/router';
   `],
 })
 export class HeaderComponent implements OnInit, OnDestroy {
-    menuOpen = false;
-    currentSlide = 0;
-    private slideInterval: any;
+  menuOpen = false;
+  currentSlide = 0;
+  private slideInterval: any;
 
-    ngOnInit() {
-        this.slideInterval = setInterval(() => {
-            this.currentSlide = (this.currentSlide + 1) % 3;
-        }, 5000);
-    }
+  ngOnInit() {
+    this.slideInterval = setInterval(() => {
+      this.currentSlide = (this.currentSlide + 1) % 3;
+    }, 5000);
+  }
 
-    ngOnDestroy() {
-        if (this.slideInterval) {
-            clearInterval(this.slideInterval);
-        }
+  ngOnDestroy() {
+    if (this.slideInterval) {
+      clearInterval(this.slideInterval);
     }
+  }
 
-    toggleMenu() {
-        this.menuOpen = !this.menuOpen;
-    }
+  toggleMenu() {
+    this.menuOpen = !this.menuOpen;
+  }
 
-    closeMenu() {
-        this.menuOpen = false;
-    }
+  closeMenu() {
+    this.menuOpen = false;
+  }
 }

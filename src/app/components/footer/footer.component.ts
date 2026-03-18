@@ -1,15 +1,15 @@
 import { Component } from '@angular/core';
 
 @Component({
-    selector: 'app-footer',
-    standalone: true,
-    template: `
+  selector: 'app-footer',
+  standalone: true,
+  template: `
     <footer class="footer">
       <div class="footer-inner container">
         <div class="footer-top">
           <div class="footer-brand">
-            <span class="footer-logo">◆ Todoterreno</span>
-            <p class="footer-tagline">Pasión por el campo y la aventura</p>
+            <span class="footer-logo">◆ 4x4AllTerrainer</span>
+            <p class="footer-tagline">Pasión por el campo y el motor</p>
           </div>
           <div class="footer-links">
             <h4>Enlaces externos</h4>
@@ -26,12 +26,12 @@ import { Component } from '@angular/core';
           </div>
         </div>
         <div class="footer-bottom">
-          <p>&copy; 2026 Todoterreno. Todos los derechos reservados.</p>
+          <p>&copy; 2026 4x4AllTerrainer. Todos los derechos reservados.</p>
         </div>
       </div>
     </footer>
   `,
-    styles: [`
+  styles: [`
     .footer {
       background: var(--color-earth-dark);
       color: var(--text-inverse);
