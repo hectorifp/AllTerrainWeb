@@ -21,8 +21,6 @@ import { Component } from '@angular/core';
           <div class="footer-links">
             <h4>Comunidad</h4>
             <a href="https://www.foro4x4.com/" target="_blank" rel="noopener">Foro 4x4</a>
-            <a href="https://www.club4x4.es/" target="_blank" rel="noopener">Club 4x4 España</a>
-            <a href="https://www.autobild.es/coches/todoterreno" target="_blank" rel="noopener">Autobild Todoterreno</a>
           </div>
         </div>
         <div class="footer-bottom">
