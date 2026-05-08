@@ -65,7 +65,7 @@ import { ARTICLES } from '../../data/articles.data';
         <div class="container">
           <div class="stats-grid">
             <div class="stat-item">
-              <span class="stat-number">6</span>
+              <span class="stat-number">24</span>
               <span class="stat-label">Artículos publicados</span>
             </div>
             <div class="stat-item">
